@@ -7,14 +7,14 @@ class Landing extends Component {
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
+                    <p className="gap"/>
                     <img
                         src={myself}
                         alt='myself'
-                        className='myself-img'
-                    />
+                        className='myself-img'/> 
+                        <p/>               
                     <div className='banner-text'>
                     <h1>Full Stack Web Devloper</h1>
-                        
                     <hr/>
 
 
@@ -35,7 +35,6 @@ class Landing extends Component {
                         </a>
 
                     </div>
-
                     </div>
                     </Cell>
                 </Grid>

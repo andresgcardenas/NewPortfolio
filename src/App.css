@@ -2,8 +2,11 @@
   background: #000428;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+position: fixed;
 }
-
+.gap{
+  height: 50px;
+}
 
 .landing-grid{
   background: #000428;  /* fallback for old browsers */
@@ -13,8 +16,10 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
 }
 .myself-img{
   height: 250px;
-  padding-top:5em;
-  
+	border-radius: 999em;
+	border: 10px solid #000;
+	background: #000;
+
 }
 
 .banner-text{
@@ -24,11 +29,19 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
   margin: auto;
   border-radius: 10px;
   text-align: center;
+  font-family: 'Mogra', cursive;
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+border: 5px solid #000;
+
 }
 .banner-text h1 {
   font-size: 66px;
   font-weight: bold;
   color: white;
+  font-family: 'Mogra', cursive;
 }
 .banner-text hr {
   border-top: 5px dotted white;
