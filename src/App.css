@@ -1,16 +1,18 @@
 .header-color{
   background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 12px 6px -6px rgb(32, 32, 32);
+	   -moz-box-shadow: 0 12px 6px -6px rgb(32, 32, 32);
+	        box-shadow: 0 12px 6px -6px rgb(32, 32, 32);
 
 }
 .header-color1{
-  background: #1D4350;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-position: fixed;
+background-image: url("https://wallpapershome.com/images/pages/pic_h/20311.jpg");
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 .description-bio{
   margin-top: 50px;
@@ -20,12 +22,8 @@ position: fixed;
 .gap{
   height: 50px;
 }
-.landing-intro{
-  color:white;
-  padding: 25px;
-  height: 32px;
-  font-weight: 600;
-  font-family: 'Roboto Mono', monospace;
+.description-bio{
+  color: black;
 }
 .landing-grid{
   background: #000428;  /* fallback for old browsers */
@@ -37,6 +35,7 @@ position: fixed;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 75px;
   height: 250px;
 	border-radius: 999em;
 	border: 10px solid #000;
@@ -51,7 +50,30 @@ position: fixed;
   -10px 0 80px #f0f,
   10px 0 80px #0ff;
 }
+.nav-text{
+  color: white;
+}
+.navbar {
+  min-height: 80px;
+}
 
-.landing-Container{
-    
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
 }
