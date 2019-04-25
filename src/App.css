@@ -2,56 +2,72 @@
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	-webkit-box-shadow: 0 12px 6px -6px rgb(32, 32, 32);
-	   -moz-box-shadow: 0 12px 6px -6px rgb(32, 32, 32);
-	        box-shadow: 0 12px 6px -6px rgb(32, 32, 32);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+       box-shadow: 0 8px 6px -6px black;
 
 }
 .header-color1{
-background-image: url("https://wallpapershome.com/images/pages/pic_h/20311.jpg");
+background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
 height: 100vh;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
 .description-bio{
-  margin-top: 50px;
-  font-family: 'Mogra', cursive;
+  color: #3C4858;
   font-size: 20px;
+  font-family: 'Roboto Slab', serif;
 }
-.gap{
-  height: 50px;
+.description-bio1{
+  margin-top: 50px;
+  color: #3C4858;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
 }
-.description-bio{
-  color: black;
+.intro{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #3C4858;
 }
+.cardd{
+    margin: auto;
+    box-shadow: 10px 0 4px -4px grey , -10px 0 4px -4px grey; 
+ -moz-box-shadow: 10px 0 4px -4px grey, -10px 0 4px -4px grey; 
+-webkit-box-shadow: 10px 0 4px -4px grey, -10px 0 4px -4px grey;
+background-color: rgb(255,255,255)
+}
+
 .landing-grid{
   background: #000428;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
 }
+.myself-back{
+  color: #000;
+}
 .myself-img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 75px;
+  margin-top: 100px;
   height: 250px;
 	border-radius: 999em;
 	border: 10px solid #000;
 	background: #000;
   box-shadow:
   inset 0 0 50px #fff,
-  inset 20px 0 80px #f0f,
+  inset 20px 0 80px rgb(70, 166, 255),
   inset -20px 0 80px #0ff,
-  inset 20px 0 300px #f0f,
+  inset 20px 0 300px rgb(70, 166, 255),
   inset -20px 0 300px #0ff,
   0 0 50px #fff,
-  -10px 0 80px #f0f,
+  -10px 0 80px rgb(70, 166, 255),
   10px 0 80px #0ff;
 }
 .nav-text{
   color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 .navbar {
   min-height: 80px;

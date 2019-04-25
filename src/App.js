@@ -17,8 +17,8 @@ function App() {
     <Nav className="mr-auto">
       <Nav.Link href="/"><h6 className="nav-text">Home</h6></Nav.Link>
       <Nav.Link href="/aboutme"><h6 className="nav-text">About Me</h6></Nav.Link>
-      <Nav.Link href="/projects"><h6 className="nav-text">Resume</h6></Nav.Link>
-      <Nav.Link href="/resume"><h6 className="nav-text">Projects</h6></Nav.Link>
+      <Nav.Link href="/resume"><h6 className="nav-text">Resume</h6></Nav.Link>
+      <Nav.Link href="/projects"><h6 className="nav-text">Projects</h6></Nav.Link>
       <Nav.Link href="/contact"><h6 className="nav-text">Contact Me</h6></Nav.Link>
     </Nav>
   </Navbar.Collapse>

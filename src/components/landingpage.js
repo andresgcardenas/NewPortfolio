@@ -3,14 +3,16 @@ import myself from '../img/myself.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card'
 class Landing extends Component {
     render(){
         return(
             <div>
+                <Card border="secondary" className="cardd" style={{ width: '96%' }}>
+                <Card.Body>
                 <Container className="landing-Container">
-                    <Row>
+                    <Row >
                     <Col sm={12}>
-                    <p className="gap"/>
                     <img
                         src={myself}
                         alt='myself'
@@ -20,15 +22,18 @@ class Landing extends Component {
                     </Row>
                     <Row>
                     <Col sm={6}>
-                        <h1>Hello! My name is Andres Cardenas</h1>
+                        <h1 className="intro">Hello, My name is Andres Cardenas</h1>
                     </Col>
                     <Col sm={6}>
-                    <p className="description-bio">im a 20 year old full stack web developer</p>
-                    <p className="description-bio">specializing in javascript with various skills and</p>
-                    <p className="description-bio">expirience with different technologies</p>
+                    <p className="description-bio1">Im a 20 year old full stack web developer learning more and more evry single day</p>
+                    <p className="description-bio">I want to be able to contribute to the world with the power of technology</p>
+                    <p className="description-bio">Feel free to look around and find out more about me!</p>
                     </Col>
                     </Row>
+
                 </Container>
+                </Card.Body>
+                </Card>;
             </div>
         
         )
