@@ -1,10 +1,20 @@
 .header-color{
-  background: #000428;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 
 }
-.mr-auto{
+.header-color1{
+  background: #1D4350;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+position: fixed;
+}
+.description-bio{
+  margin-top: 50px;
+  font-family: 'Mogra', cursive;
   font-size: 20px;
 }
 .gap{
@@ -22,57 +32,26 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
   background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
-  overflow: hidden;
 }
 .myself-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 250px;
 	border-radius: 999em;
 	border: 10px solid #000;
 	background: #000;
-
+  box-shadow:
+  inset 0 0 50px #fff,
+  inset 20px 0 80px #f0f,
+  inset -20px 0 80px #0ff,
+  inset 20px 0 300px #f0f,
+  inset -20px 0 300px #0ff,
+  0 0 50px #fff,
+  -10px 0 80px #f0f,
+  10px 0 80px #0ff;
 }
 
-.banner-text{
-  background-color: black;
-  opacity: .8;
-  width: 75%;
-  margin: auto;
-  border-radius: 10px;
-  text-align: center;
-  font-family: 'Mogra', cursive;
-background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
-border: 5px solid #000;
-
-}
-.banner-text h1 {
-  font-size: 66px;
-  font-weight: bold;
-  color: white;
-  font-family: 'Mogra', cursive;
-}
-.banner-text hr {
-  border-top: 5px dotted white;
-  width: 50%;
-  margin: auto;
-}
-.banner-text p {
-  color: white;
-  font-size: 20px;
-  padding: 1em;
-}
-
-.social-links{
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
-
-}
-
-.social-links i{
-color: white;
-font-size: 5em;
-padding: 8px;
+.landing-Container{
+    
 }
