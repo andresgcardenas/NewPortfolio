@@ -3,7 +3,8 @@ import myself from '../img/myself.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
+import Fade from 'react-reveal/Fade';
 class Landing extends Component {
     render(){
         return(
@@ -13,11 +14,13 @@ class Landing extends Component {
                 <Container className="landing-Container">
                     <Row >
                     <Col sm={12}>
+                    <Fade top>
                     <img
                         src={myself}
                         alt='myself'
                         className='myself-img'/> 
                         <p/>
+                    </Fade>
                     </Col>
                     </Row>
                     <Row>
