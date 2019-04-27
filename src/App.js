@@ -9,9 +9,9 @@ import Navbar from 'react-bootstrap/Navbar'
 function App() {
   return (
       
-<div style={{height: '1750px', width:'100%'}} className='header-color1'>
+<div style={{height: '100%', width:'100%'}} className='header-color1'>
 <Navbar fixed="top" bg="light" expand="lg" className='header-color'>
-  <Navbar.Brand href="/"><h3 className="nav-text">Welcome!</h3></Navbar.Brand>
+  <Navbar.Brand href="/"><h3 className="nav-text1"><img src="https://img.icons8.com/bubbles/50/000000/workstation.png"/>Welcome</h3></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
@@ -19,7 +19,6 @@ function App() {
       <Nav.Link href="/aboutme"><h6 className="nav-text">About Me</h6></Nav.Link>
       <Nav.Link href="/resume"><h6 className="nav-text">Resume</h6></Nav.Link>
       <Nav.Link href="/projects"><h6 className="nav-text">Projects</h6></Nav.Link>
-      <Nav.Link href="/contact"><h6 className="nav-text">Contact Me</h6></Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>;

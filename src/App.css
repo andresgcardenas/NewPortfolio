@@ -7,6 +7,29 @@
        box-shadow: 0 8px 6px -6px black;
 
 }
+.img2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  width: 300px;
+  height: 300px;
+}
+.logos{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  
+}
+.logos a:hover{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  
+}
+.intro-text{
+  text-align: center;
+}
 .header-color1{
 background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
 height: 100vh;
@@ -26,9 +49,12 @@ background-size: cover;
   font-family: 'Roboto Slab', serif;
 }
 .intro{
+  margin-top: 40px;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #3C4858;
+  text-align: center;
 }
+
 .icons{
   text-align: center;
 }
@@ -80,6 +106,13 @@ background-color: rgb(255,255,255)
 .nav-text{
   color: white;
   font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+}
+.nav-text1{
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  line-height: 60px;
 }
 .navbar {
   min-height: 80px;
