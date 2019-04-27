@@ -29,6 +29,15 @@ background-size: cover;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #3C4858;
 }
+.icons{
+  text-align: center;
+}
+.introskills{
+  margin-top: 50px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #3C4858;
+  text-align: center;
+}
 .cardd{
     margin: auto;
     box-shadow: 10px 0 4px -4px grey , -10px 0 4px -4px grey; 
