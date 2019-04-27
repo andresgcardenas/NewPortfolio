@@ -53,6 +53,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+.pdf{
+  margin-top: 50px;
+}
 .description-bio{
   color: #3C4858;
   font-size: 20px;
@@ -66,6 +69,24 @@ background-size: cover;
 }
 .intro{
   margin-top: 40px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #3C4858;
+  text-align: center;
+}
+.intro2{
+  margin-top: 25px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: black;
+  text-align: center;
+}
+.intro3{
+  margin-top: 60px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+.intro4{
+  margin-top: 60px;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #3C4858;
   text-align: center;
