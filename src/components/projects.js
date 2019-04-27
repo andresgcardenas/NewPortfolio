@@ -4,8 +4,8 @@ import Card from 'react-bootstrap/Card';
 import Fade from 'react-reveal/Fade';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 import { Flippy,FrontSide, BackSide } from 'react-flippy';
+import Bounce from 'react-reveal/Bounce';
 
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput, MDBFooter } from 'mdbreact';
 class Projects extends Component {
@@ -16,75 +16,85 @@ class Projects extends Component {
                 <Card.Body>
                 <Container className="landing-Container">
                 <Row className="projectcard">
-                <Col className="proj">
+               <Col sm={12} className="proj">
+               <Bounce top>
                 <Flippy
-                className="projectcard"
+
                 flipOnHover={false} // default false
                 flipOnClick={true} // default false
-                flipDirection="horizontal" // horizontal or vertical
+                flipDirection="vertical"
+                style={{ width: '100%', height: '200px',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }} // horizontal or vertical
                 ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
                 // if you pass isFlipped prop component will be controlled component.
-                // and other props, which will go to div
-                style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
+                // and other props, which will go to div /// these are optional style, it is not necessary
             >
                 <FrontSide
                 style={{
                     backgroundColor: '#41669d',
                 }}
                 >
-                RICK
+                <h1>Avery Rice Foundation</h1>
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#175852'}}>
                 ROCKS
                 </BackSide>
             </Flippy>
+            </Bounce>
             </Col>
-            <Col >
-            <Flippy
+                                        <Col sm={12} className="proj">
+                                        <Bounce top>
+                <Flippy
+
                 flipOnHover={false} // default false
                 flipOnClick={true} // default false
-                flipDirection="horizontal" // horizontal or vertical
+                flipDirection="vertical"
+                style={{ width: '100%', height: '200px',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }} // horizontal or vertical
                 ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
                 // if you pass isFlipped prop component will be controlled component.
-                // and other props, which will go to div
-                style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
+                // and other props, which will go to div /// these are optional style, it is not necessary
             >
                 <FrontSide
                 style={{
                     backgroundColor: '#41669d',
                 }}
                 >
-                RICK
+                <h1>Mongo Scraper</h1>
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#175852'}}>
                 ROCKS
                 </BackSide>
             </Flippy>
+            </Bounce>
             </Col>
-            <Col >
-            <Flippy
+            <Col sm={12} className="proj">
+            <Bounce top>
+                <Flippy
                 flipOnHover={false} // default false
                 flipOnClick={true} // default false
-                flipDirection="horizontal" // horizontal or vertical
+                flipDirection="vertical" // horizontal or vertical
                 ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
                 // if you pass isFlipped prop component will be controlled component.
                 // and other props, which will go to div
-                style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
+                style={{ width: '100%', height: '200px',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }} // horizontal or vertical
+                 // to use toggle method like this.flippy.toggle()
+                // if you pass isFlipped prop component will be controlled component.
+                // and other props, which will go to div /// these are optional style, it is not necessary
             >
                 <FrontSide
                 style={{
                     backgroundColor: '#41669d',
                 }}
                 >
-                RICK
+                <h1>React command line portfolio</h1>
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#175852'}}>
-                ROCKS
+                wasup
                 </BackSide>
             </Flippy>
+            </Bounce>
             </Col>
             </Row>
             
