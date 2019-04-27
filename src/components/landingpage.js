@@ -29,8 +29,8 @@ class Landing extends Component {
                     </Col>
                     <Col sm={6}>
                     <Fade top>
-                    <p className="description-bio1">Im a 20 year old full stack web developer learning more and more evry single day</p>
-                    <p className="description-bio">I want to be able to contribute to the world with the power of technology</p>
+                    <p className="description-bio1">Im a 20 year old full stack web developer learning more and more every single day</p>
+                    <p className="description-bio">An outgoing character that loves to execute, debug, code</p>
                     <p className="description-bio">Feel free to look around and find out more about me!</p>
                     </Fade>
                     </Col>

@@ -37,7 +37,7 @@ class Resume extends Component {
                     <Fade right>
                     <p className="description-bio1">Im a highly encouraged individual who loves to program</p>
                     <p className="description-bio">I want to be able to contribute to the world with the power of technology</p>
-                    <p className="description-bio">Feel free to look around and find out more about me!</p>
+                    <p className="description-bio">My goal is to earn expirience in web development as i expand my knowldge in Software Devlopment overall.</p>
                     </Fade>
                     </Col>
                     </Row>
@@ -57,7 +57,7 @@ class Resume extends Component {
                     <Row>
                     <Col sm={12}>
                         <Fade bottom>
-                        <p className="description-bio">Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Backend web development. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and JWT. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI.</p>
+                        <p className="description-bio">Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Backend web development. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and JWT. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI. I also have expirience with  C++.</p>
                         </Fade>
                     </Col>
                     </Row>

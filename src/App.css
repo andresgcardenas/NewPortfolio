@@ -7,6 +7,14 @@
        box-shadow: 0 8px 6px -6px black;
 
 }
+.projectcard{
+  margin-top: 75px;
+  justify-content: center;
+  text-align: center;
+}
+.projectcards{
+  margin-left: 15px;
+}
 .img2{
   display: block;
   margin-left: auto;
