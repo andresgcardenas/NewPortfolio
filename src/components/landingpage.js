@@ -25,12 +25,16 @@ class Landing extends Component {
                     </Row>
                     <Row>
                     <Col sm={6}>
+                        <Fade top>
                         <h1 className="intro">Hello, My name is Andres Cardenas</h1>
+                        </Fade>
                     </Col>
                     <Col sm={6}>
+                    <Fade top>
                     <p className="description-bio1">Im a 20 year old full stack web developer learning more and more evry single day</p>
                     <p className="description-bio">I want to be able to contribute to the world with the power of technology</p>
                     <p className="description-bio">Feel free to look around and find out more about me!</p>
+                    </Fade>
                     </Col>
                     </Row>
 

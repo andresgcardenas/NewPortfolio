@@ -32,6 +32,9 @@ background-size: cover;
 .icons{
   text-align: center;
 }
+.photo1{
+  margin-top: 25px;
+}
 .introskills{
   margin-top: 50px;
   font-family: 'IBM Plex Sans', sans-serif;

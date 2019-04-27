@@ -7,7 +7,9 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Fade from 'react-reveal/Fade';
 
+
 class Resume extends Component {
+
     render(){
         return(
             <div>
@@ -16,7 +18,7 @@ class Resume extends Component {
                 <Container className="landing-Container">
                     <Row >
                     <Col sm={12}>
-                    <Fade left>
+                    <Fade top>
                     <img
                         src={myself}
                         alt='myself'
@@ -28,7 +30,7 @@ class Resume extends Component {
                     <Row>
                     <Col sm={6}>
                         <Fade left>
-                        <h1 className="intro">A little about me</h1>
+                        <h1 className="intro">A little more about me</h1>
                         </Fade>
                     </Col>
                     <Col sm={6}>
@@ -40,9 +42,30 @@ class Resume extends Component {
                     </Col>
                     </Row>
                     <Row>
+                    <Col sm={12} className="photo1">
+                    <Fade bottom>
+                    <Image src="https://cdn-images-1.medium.com/max/2600/0*HICLyAdNSIyT0ODU.jpg" thumbnail />
+                    </Fade>
+                    </Col>
+                    </Row>
+                    <Row>
                     <Col sm={12}>
                         <Fade bottom>
-                        <h1 className="introskills">Skills</h1>
+                        <h1 className="introskills">What do i offer?</h1>
+                        </Fade>
+                    </Col>
+                    <Row>
+                    <Col sm={12}>
+                        <Fade bottom>
+                        <p className="description-bio">Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Backend web development. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and JWT. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI.</p>
+                        </Fade>
+                    </Col>
+                    </Row>
+                    </Row>
+                    <Row>
+                    <Col sm={12}>
+                        <Fade bottom>
+                        <h1 className="introskills">Top Skills</h1>
                         </Fade>
                     </Col>
                     </Row>
