@@ -5,9 +5,39 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Fade from 'react-reveal/Fade';
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
+import axios from 'axios'
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput, MDBFooter } from 'mdbreact';
 class Landing extends Component {
+    constructor(){
+        super()
+
+        this.state= {
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+
+        }
+this.handleChange = this.handleChange.bind(this);
+this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    handleChange = e =>{
+        this.setState({[e.target.name]: e.target.value })
+    }
+
+    async handleSubmit(e){
+        e.preventDefault();
+
+        const {name, email, subject, message} = this.state;
+
+        const form = await axios.post('/api/form', {
+            name,
+            email,
+            subject,
+            message
+        })
+    }
     render(){
         return(
             <div>
@@ -78,9 +108,10 @@ class Landing extends Component {
                         <MDBContainer>
                         <MDBRow>
                             <MDBCol>
-                            <form>
+                            <form onSubmit={this.handleSubmit}>
                                 <div className="grey-text">
                                 <MDBInput
+                                    name="name"
                                     label="Your name"
                                     icon="user"
                                     group
@@ -88,8 +119,10 @@ class Landing extends Component {
                                     validate
                                     error="wrong"
                                     success="right"
+                                    onChange={this.handleChange}
                                 />
                                 <MDBInput
+                                    name="email"
                                     label="Your email"
                                     icon="envelope"
                                     group
@@ -97,8 +130,10 @@ class Landing extends Component {
                                     validate
                                     error="wrong"
                                     success="right"
+                                    onChange={this.handleChange}
                                 />
                                 <MDBInput
+                                    name="subject"
                                     label="Subject"
                                     icon="tag"
                                     group
@@ -106,18 +141,19 @@ class Landing extends Component {
                                     validate
                                     error="wrong"
                                     success="right"
+                                    onChange={this.handleChange}
                                 />
                                 <MDBInput
+                                    name="message"
                                     type="textarea"
                                     rows="2"
                                     label="Your message"
                                     icon="pencil-alt"
+                                    onChange={this.handleChange}
                                 />
                                 </div>
                                 <div className="text-center">
-                                <MDBBtn outline color="secondary">
-                                    Send <MDBIcon far icon="paper-plane" className="ml-1" />
-                                </MDBBtn>
+                                <button>Submit</button>
                                 </div>
                             </form>
                             </MDBCol>
