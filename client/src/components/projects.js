@@ -7,9 +7,13 @@ import Col from 'react-bootstrap/Col';
 import { Flippy,FrontSide, BackSide } from 'react-flippy';
 import myself from '../img/myself.jpg';
 import paper from '../img/paper.jpeg';
+import slt from '../img/SLT.JPG';
+import chat from '../img/chat.png';
 import Avery from '../img/avlogo.png';
 import cmd from '../img/cmd.jpg';
 import Bounce from 'react-reveal/Bounce';
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Image from 'react-bootstrap/Image';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput, MDBFooter } from 'mdbreact';
 class Projects extends Component {
@@ -22,7 +26,7 @@ class Projects extends Component {
                 <Row>
                 <Col sm={12}>
                 <Fade top>
-                <h1 className='intro4'>Projects</h1>
+                <h1 className='intro4'>Recent Projects</h1>
                 </Fade>
                 </Col>
                 </Row>
@@ -48,7 +52,11 @@ class Projects extends Component {
                 </FrontSide>
                 <BackSide
                 style={{backgroundColor: '#41669d', backgroundSize:'cover',backgroundISize:'contain',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
-                ROCKS
+                <p className="description-bio">A fundraising application built for a lost friends mother that is building a skatepark after him.</p>
+                <ButtonGroup aria-label="Basic example">
+                <Button target="_blank" href="https://whispering-bayou-39660.herokuapp.com" className='buttons' variant="secondary">Live Project</Button>
+                <Button target="_blank" href="https://github.com/averyricefoundation/-AveryBuilt" className='buttonss' variant="secondary">Github</Button>
+                </ButtonGroup>
                 </BackSide>
                 </Flippy>
                 </Bounce>
@@ -73,8 +81,11 @@ class Projects extends Component {
                 <h1 className="intro3">Command Line Portfolio</h1>
                 </FrontSide>
                 <BackSide
-                style={{ backgroundColor: '#41669d'}}>
-                ROCKS
+                style={{ backgroundColor: '#41669d',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
+                <ButtonGroup aria-label="Basic example">
+                <Button target="_blank" href="https://portfolio-ac123.herokuapp.com/" className='buttons' variant="secondary">Live Project</Button>
+                <Button target="_blank" href="https://github.com/Yungcode34/Portfolio" className='buttonss' variant="secondary">Github</Button>
+                </ButtonGroup>
                 </BackSide>
             </Flippy>
             </Bounce>
@@ -101,8 +112,78 @@ class Projects extends Component {
                 <h1 className="intro2">News Scraper</h1>
                 </FrontSide>
                 <BackSide
-                style={{ backgroundColor: '#41669d'}}>
-                wasup
+                style={{ backgroundColor: '#41669d',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
+                <ButtonGroup aria-label="Basic example">
+                <Button target="_blank" href="https://glacial-oasis-46115.herokuapp.com/" className='buttons' variant="secondary">Live Project</Button>
+                <Button target="_blank" href="https://github.com/averyricefoundation/-AveryBuilt" className='buttonss' variant="secondary">Github</Button>
+                </ButtonGroup>
+                </BackSide>
+            </Flippy>
+            </Bounce>
+            </Col>
+            </Row>
+                    <Row>
+                <Col sm={12}>
+                <Fade top>
+                <h1 className='intro4'>Upcoming Projects</h1>
+                </Fade>
+                </Col>
+                </Row>
+                <Row className="projectcard">
+                <Col sm={12} className="proj">
+                <Bounce>
+                <Flippy
+
+                flipOnHover={false} // default false
+                flipOnClick={true} // default false
+                flipDirection="vertical"
+                style={{ width: '100%', height: '200px',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }} // horizontal or vertical
+                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
+                // if you pass isFlipped prop component will be controlled component.
+                // and other props, which will go to div /// these are optional style, it is not necessary
+            >
+                <FrontSide
+                style={{
+                     backgroundImage: `url(${slt})`,display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" 
+                }}
+                >
+                <h1 className="intro5">SLT WEBSITE</h1>
+                </FrontSide>
+                <BackSide
+                style={{backgroundColor: '#41669d', backgroundSize:'cover',backgroundISize:'contain',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
+                <p className="description-bio">A local brand made by the homies and i , we're going to be selling art clothing, aswell as having a far end site with a blog, shop, gellery and much more</p>
+                <ButtonGroup aria-label="Basic example">
+                <Button target="_blank" href="https://github.com/Yungcode34/SLT" className='buttonss' variant="secondary">Github</Button>
+                </ButtonGroup>
+                </BackSide>
+                </Flippy>
+                </Bounce>
+                </Col>
+                <Col sm={12} className="proj">
+                <Bounce bottom>
+                <Flippy
+
+                flipOnHover={false} // default false
+                flipOnClick={true} // default false
+                flipDirection="vertical"
+                style={{ width: '100%', height: '200px',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }} // horizontal or vertical
+                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
+                // if you pass isFlipped prop component will be controlled component.
+                // and other props, which will go to div /// these are optional style, it is not necessary
+            >
+                <FrontSide
+                style={{
+                    backgroundImage: `url(${chat})`
+                }}
+                >
+                <h1 className="intro2">React Livetime Chat</h1>
+                </FrontSide>
+                <BackSide
+                style={{ backgroundColor: '#41669d',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
+                                <p className="description-bio">A application built for online chating made with firebase, allows users to sign up, make chat rooms, and speak with others across the globe.</p>
+                <ButtonGroup aria-label="Basic example">
+                <Button target="_blank" href="https://github.com/Yungcode34/react-live-chat" className='buttonss' variant="secondary">Github</Button>
+                </ButtonGroup>
                 </BackSide>
             </Flippy>
             </Bounce>
@@ -111,7 +192,7 @@ class Projects extends Component {
             <Row>
                     <Col sm={12}>
                         <Fade bottom>
-                        <h1 className="introskills">More Preojects on the way!</h1>
+                        <h1 className="introskills">Even more projects on the way!</h1>
                         </Fade>
                     </Col>
                     <Row>
@@ -122,7 +203,6 @@ class Projects extends Component {
                     </Col>
                     </Row>
                     </Row>
-            
                 </Container>
                 </Card.Body>
                 </Card>;

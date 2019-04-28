@@ -7,8 +7,37 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Fade from 'react-reveal/Fade';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput, MDBFooter } from 'mdbreact';
-
+import axios from 'axios'
 class Resume extends Component {
+    constructor(){
+        super()
+
+        this.state= {
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+
+        }
+this.handleChange = this.handleChange.bind(this);
+this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    handleChange = e =>{
+        this.setState({[e.target.name]: e.target.value })
+    }
+
+    async handleSubmit(e){
+        e.preventDefault();
+
+        const {name, email, subject, message} = this.state;
+
+        const form = await axios.post('/api/form', {
+            name,
+            email,
+            subject,
+            message
+        })
+    }
 
     render(){
         return(
@@ -57,7 +86,7 @@ class Resume extends Component {
                     <Row>
                     <Col sm={12}>
                         <Fade bottom>
-                        <p className="description-bio">Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Backend web development. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and JWT. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI. I also have expirience with  C++.</p>
+                        <p className="description-bio">Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Backend web development. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and JWT. Also have React VR expirience, React redux, and light React Native. Expirience building small application in vue.js. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI. I also have expirience with  C++.</p>
                         </Fade>
                     </Col>
                     </Row>
@@ -141,9 +170,10 @@ class Resume extends Component {
                         <MDBContainer>
                         <MDBRow>
                             <MDBCol>
-                            <form>
+                            <form onSubmit={this.handleSubmit}>
                                 <div className="grey-text">
                                 <MDBInput
+                                    name="name"
                                     label="Your name"
                                     icon="user"
                                     group
@@ -151,8 +181,10 @@ class Resume extends Component {
                                     validate
                                     error="wrong"
                                     success="right"
+                                    onChange={this.handleChange}
                                 />
                                 <MDBInput
+                                    name="email"
                                     label="Your email"
                                     icon="envelope"
                                     group
@@ -160,8 +192,10 @@ class Resume extends Component {
                                     validate
                                     error="wrong"
                                     success="right"
+                                    onChange={this.handleChange}
                                 />
                                 <MDBInput
+                                    name="subject"
                                     label="Subject"
                                     icon="tag"
                                     group
@@ -169,18 +203,19 @@ class Resume extends Component {
                                     validate
                                     error="wrong"
                                     success="right"
+                                    onChange={this.handleChange}
                                 />
                                 <MDBInput
+                                    name="message"
                                     type="textarea"
                                     rows="2"
                                     label="Your message"
                                     icon="pencil-alt"
+                                    onChange={this.handleChange}
                                 />
                                 </div>
                                 <div className="text-center">
-                                <MDBBtn outline color="secondary">
-                                    Send <MDBIcon far icon="paper-plane" className="ml-1" />
-                                </MDBBtn>
+                                <button>Submit</button>
                                 </div>
                             </form>
                             </MDBCol>
