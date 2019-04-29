@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const nodeMailer = require('nodemailer');
-const path = required('path');
+const path = require('path');
 const app = express();
 
 app.use(bodyParser.json());
