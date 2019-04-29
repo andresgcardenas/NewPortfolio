@@ -7,13 +7,21 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "engines": {
+    "node": ""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Yungcode34/NewPortfolio.git"
   },
-  "keywords": [],
+  "keywords": [    
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"],
   "author": "",
   "license": "ISC",
   "bugs": {
