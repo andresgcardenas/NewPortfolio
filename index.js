@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const nodeMailer = require('nodemailer');
+const path = required('path');
 const app = express();
 
 app.use(bodyParser.json());
@@ -46,7 +47,7 @@ transporter.sendMail(mailOptions, (err, info) =>{
     })
 })
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, ()=>{
     console.log('server listenning on ${PORT}')
