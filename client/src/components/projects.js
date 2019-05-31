@@ -11,6 +11,7 @@ import slt from '../img/SLT.JPG';
 import chat from '../img/chat.png';
 import Avery from '../img/avlogo.png';
 import cmd from '../img/cmd.jpg';
+import Crypto from '../img/crypto.png'
 import Bounce from 'react-reveal/Bounce';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
@@ -54,8 +55,68 @@ class Projects extends Component {
                 style={{backgroundColor: '#41669d', backgroundSize:'cover',backgroundISize:'contain',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
                 <p className="description-bio">A fundraising application built for a lost friends mother that is building a skatepark after him.</p>
                 <ButtonGroup aria-label="Basic example">
-                <Button target="_blank" href="https://whispering-bayou-39660.herokuapp.com" className='buttons' variant="secondary">Live Project</Button>
+                <Button target="_blank" href="http://averyricefoundation.com/" className='buttons' variant="secondary">Live Project</Button>
                 <Button target="_blank" href="https://github.com/averyricefoundation/-AveryBuilt" className='buttonss' variant="secondary">Github</Button>
+                </ButtonGroup>
+                </BackSide>
+                </Flippy>
+                </Bounce>
+                </Col>
+                <Col sm={12} className="proj">
+                <Bounce top>
+                <Flippy
+
+                flipOnHover={false} // default false
+                flipOnClick={true} // default false
+                flipDirection="vertical"
+                style={{ width: '100%', height: '200px',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }} // horizontal or vertical
+                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
+                // if you pass isFlipped prop component will be controlled component.
+                // and other props, which will go to div /// these are optional style, it is not necessary
+            >
+                <FrontSide
+                style={{
+                     backgroundImage: `url(${chat})`,display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" 
+                }}
+                >
+                <h1 className="intro">Code talk</h1>
+                </FrontSide>
+                <BackSide
+                style={{backgroundColor: '#41669d', backgroundSize:'cover',backgroundISize:'contain',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
+                <p className="description-bio">A React and firebase application made for developers to connect and chat.</p>
+                <ButtonGroup aria-label="Basic example">
+                <Button target="_blank" href="https://react-code-talk.firebaseapp.com/" className='buttons' variant="secondary">Live Project</Button>
+                <Button target="_blank" href="https://github.com/Yungcode34/Code-Talk" className='buttonss' variant="secondary">Github</Button>
+                </ButtonGroup>
+                </BackSide>
+                </Flippy>
+                </Bounce>
+                </Col>
+                <Col sm={12} className="proj">
+                <Bounce top>
+                <Flippy
+
+                flipOnHover={false} // default false
+                flipOnClick={true} // default false
+                flipDirection="vertical"
+                style={{ width: '100%', height: '200px',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }} // horizontal or vertical
+                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
+                // if you pass isFlipped prop component will be controlled component.
+                // and other props, which will go to div /// these are optional style, it is not necessary
+            >
+                <FrontSide
+                style={{
+                     backgroundImage: `url(${Crypto})`,display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" 
+                }}
+                >
+                <h1 className="intro">Crypto dash</h1>
+                </FrontSide>
+                <BackSide
+                style={{backgroundColor: '#41669d', backgroundSize:'cover',backgroundISize:'contain',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
+                <p className="description-bio">A React application to watch and view cryptocurrency market movement, created for data visualization purposes.</p>
+                <ButtonGroup aria-label="Basic example">
+                <Button target="_blank" href="https://cryptocurrency-dash.herokuapp.com/" className='buttons' variant="secondary">Live Project</Button>
+            
                 </ButtonGroup>
                 </BackSide>
                 </Flippy>
@@ -82,6 +143,7 @@ class Projects extends Component {
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#41669d',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
+                    <p className="description-bio">A React portfolio made on a 90s retro theme.</p>
                 <ButtonGroup aria-label="Basic example">
                 <Button target="_blank" href="https://portfolio-ac123.herokuapp.com/" className='buttons' variant="secondary">Live Project</Button>
                 <Button target="_blank" href="https://github.com/Yungcode34/Portfolio" className='buttonss' variant="secondary">Github</Button>
@@ -113,6 +175,7 @@ class Projects extends Component {
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#41669d',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
+                    <p className="description-bio">A React application that scrapes daily news and lets you save and comment on them.</p>
                 <ButtonGroup aria-label="Basic example">
                 <Button target="_blank" href="https://glacial-oasis-46115.herokuapp.com/" className='buttons' variant="secondary">Live Project</Button>
                 <Button target="_blank" href="https://github.com/averyricefoundation/-AveryBuilt" className='buttonss' variant="secondary">Github</Button>
@@ -173,16 +236,16 @@ class Projects extends Component {
             >
                 <FrontSide
                 style={{
-                    backgroundImage: `url(${chat})`
+                    backgroundImage: `url(${Crypto})`
                 }}
                 >
-                <h1 className="intro2">React Livetime Chat</h1>
+                <h1 className="intro2">Node blockchain technology</h1>
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#41669d',display:"flex", textAlign:"center", justifyContent: "center", flexDirection:"column" }}>
-                                <p className="description-bio">A application built for online chating made with firebase, allows users to sign up, make chat rooms, and speak with others across the globe.</p>
+                                <p className="description-bio">A node blockchain that is "cryptocurrency" technology.</p>
                 <ButtonGroup aria-label="Basic example">
-                <Button target="_blank" href="https://github.com/Yungcode34/react-live-chat" className='buttonss' variant="secondary">Github</Button>
+                <Button target="_blank" href="https://github.com/Yungcode34/node-blockchain" className='buttonss' variant="secondary">Github</Button>
                 </ButtonGroup>
                 </BackSide>
             </Flippy>

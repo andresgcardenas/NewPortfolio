@@ -64,9 +64,9 @@ this.handleSubmit = this.handleSubmit.bind(this);
                     </Col>
                     <Col sm={6}>
                     <Fade right>
-                    <p className="description-bio1">Im a highly encouraged individual who loves to program</p>
-                    <p className="description-bio">I want to be able to contribute to the world with the power of technology</p>
-                    <p className="description-bio">My goal is to earn expirience in web development as i expand my knowldge in Software Devlopment overall.</p>
+                    <p className="description-bio1">Im a highly encouraged individual who loves to program.</p>
+                    <p className="description-bio">I want to be able to contribute to the world with the power of technology.</p>
+                    <p className="description-bio">My goal is to earn experience in web development as i expand my knowledge in Software Devlopment overall.</p>
                     </Fade>
                     </Col>
                     </Row>
