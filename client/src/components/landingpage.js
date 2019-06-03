@@ -60,7 +60,7 @@ this.handleSubmit = this.handleSubmit.bind(this);
                     <Col sm={6}>
                     <Fade top>
                     <p className="description-bio1">20 year old full stack web developer learning more and more every single day</p>
-                    <p className="description-bio">An outgoing character that loves to execute, debug, code</p>
+                    <p className="description-bio">An outgoing character that loves to execute, debug, code.</p>
                     <p className="description-bio">Feel free to look around and find out more about me!</p>
                     </Fade>
                     </Col>
