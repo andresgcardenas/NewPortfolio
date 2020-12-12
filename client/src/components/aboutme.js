@@ -134,7 +134,7 @@ this.handleSubmit = this.handleSubmit.bind(this);
                     <Col sm={3}>
                     <Fade bottom>
                     <img src="https://img.icons8.com/color/96/000000/css3.png"/>
-                    <p className="description-bio">CSS / css libraries</p>
+                    <p className="description-bio">CSS</p>
                     </Fade>
                     </Col>
                     <Col sm={3}>
